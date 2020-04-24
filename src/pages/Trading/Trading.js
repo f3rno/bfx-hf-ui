@@ -37,6 +37,10 @@ export default class Trading extends React.PureComponent {
         target: '.hfui-tradingpage__chart',
         content: 'This is our custom chart. You can check all available charts at the Settings page.',
       },
+      {
+        target: '.icon-notifications',
+        content: 'Toggle your notifications.',
+      },
     ],
     run: true,
     showProgress: true,
@@ -117,7 +121,7 @@ export default class Trading extends React.PureComponent {
             />
           </div>
         </div>
-
+        ''
         <StatusBar displayLayoutControls={false} />
       </div>
     )
