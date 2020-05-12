@@ -1,5 +1,6 @@
 import React from 'react'
 import randomColor from 'randomcolor'
+import Joyride from 'react-joyride'
 
 import StrategyEditor from '../../components/StrategyEditor'
 import StrategyTradesTable from '../../components/StrategyTradesTable'
@@ -77,6 +78,17 @@ export default class StrategyEditorPage extends React.Component {
 
     return (
       <div className='hfui-strategyeditorpage__wrapper'>
+        <Joyride
+          steps={[
+            {
+              target: 'button.hfui-button.green',
+              content: 'Creaete your own strategies',
+            },
+          ]}
+          floaterProps={{
+            autoOpen: true,
+          }}
+        />
         <StrategyEditor
           dark
           key='editor'
